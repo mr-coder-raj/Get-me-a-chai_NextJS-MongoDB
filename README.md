@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ☕ Get Me A Chai – Patreon Clone with Next.js & MongoDB
 
-## Getting Started
+![App Screenshot](./getmeachai.png)
 
-First, run the development server:
+**Get Me A Chai** is a modern crowdfunding platform inspired by Patreon, enabling creators to receive support from their audience through one-time or recurring donations. Built with **Next.js**, **MongoDB**, and **Razorpay**, it offers a seamless experience for both creators and supporters.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Features
+
+- 🔐 Secure user authentication via GitHub and Google (NextAuth.js)
+- 👤 Creator profiles with personalized pages
+- 💳 Payment integration using Razorpay
+- 📄 Dynamic routing for creator pages
+- 📊 Dashboard to track earnings and supporters
+- 🎨 Responsive UI with Tailwind CSS
+
+---
+
+## 🛠 Tech Stack
+
+| Technology   | Description                          |
+|--------------|--------------------------------------|
+| Next.js      | React framework for SSR & APIs       |
+| MongoDB      | NoSQL database for data storage      |
+| NextAuth.js  | Authentication via OAuth providers   |
+| Razorpay     | Payment gateway integration          |
+| Tailwind CSS | Utility-first CSS framework          |
+
+---
+
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+- MongoDB database
+- Razorpay account for payment integration
+
+### Installation
+
+## 1. Clone the repository
+```
+git clone https://github.com/mr-coder-raj/Get-me-a-chai_NextJS-MongoDB.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2. Navigate to the project directory
+```
+cd Get-me-a-chai_NextJS-MongoDB
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 3. Install dependencies
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 4. Set up environment variables
+### Create a `.env.local` file in the root directory and add the following:
 
-## Learn More
+```
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your_nextauth_secret
+GITHUB_ID=your_github_client_id
+GITHUB_SECRET=your_github_client_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 5. Start the development server
+```
+npm run dev
+```
+### Open your browser and visit:
+👉 http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 Future Enhancements
+- Email notifications for supporters and creators
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Support for multiple payment gateways
 
-## Deploy on Vercel
+- Creator tiers and subscription plans
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Admin panel for platform management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🤝 Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to fork this repo and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+This project is licensed under the MIT License.
+
+> Made with ❤️ by @mr-coder-raj
